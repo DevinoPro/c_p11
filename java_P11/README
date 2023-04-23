@@ -1,0 +1,8 @@
+Java P11 code for win or linux
+
+Base
+- P11 code를 이용 key 생성 및 생성된 키로 서명  
+- jar package..
+SVC
+- Base 기반 IMEI서명서비스 기반으로 수정 
+

@@ -1,0 +1,17 @@
+#!/bin/bash 
+
+# JUST EXECUTE This File with root permission 
+
+rm bin/*.class
+rm executable.jar
+
+javac -d bin CMain.java P11RSAKeyPair.java
+java -cp bin CMain
+
+cd bin
+jar cvmf MAINFEST.MF executable.jar *.class
+mv executable.jar ../
+cd ..
+chmod 774 executable.jar
+chown administrator:administrator executable.jar
+
